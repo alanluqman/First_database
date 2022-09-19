@@ -79,3 +79,8 @@ CREATE TABLE visits (
 	FOREIGN KEY (vet_id) REFERENCES vets (id),
 	FOREIGN KEY (animal_id) REFERENCES animals(animal_id)
 );
+
+-- --------------------- DataBase performance audit
+
+-- Add Email column to owners
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
